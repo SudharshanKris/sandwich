@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:orientation="vertical"
+        xmlns:android="http://schemas.android.com/apk/res/android" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="Sandwhiches"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_marginTop="18dp"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginLeft="18dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="Rs 30"/>
+            <Button
+                android:layout_width="60dp"
+                android:layout_marginLeft="18dp"
+                android:layout_height="40dp"
+                android:text="+"
+                android:onClick="onClick"
+                android:id="@+id/b1" />
+            <TextView
+                android:layout_marginLeft="18dp"
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text=" 0"
+                android:id="@+id/t1" />
+            <Button
+                android:layout_width="60dp"
+                android:layout_marginLeft="18dp"
+                android:layout_height="40dp"
+                android:onClick="onClick"
+                android:text="-"
+                android:id="@+id/b2" />
+
+
+
+
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_marginTop="18dp"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginLeft="18dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="Rs 40"/>
+            <Button
+                android:layout_width="60dp"
+                android:layout_marginLeft="18dp"
+                android:layout_height="40dp"
+                android:onClick="onClick"
+                android:text="+"
+                android:id="@+id/b3" />
+            <TextView
+                android:layout_marginLeft="18dp"
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text=" 0"
+                android:id="@+id/t2" />
+            <Button
+                android:layout_width="60dp"
+                android:layout_marginLeft="18dp"
+                android:layout_height="40dp"
+                android:text="-"
+                android:onClick="onClick"
+                android:id="@+id/b4" />
+
+
+
+
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_marginTop="18dp"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginLeft="18dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="Rs 45"/>
+            <Button
+                android:layout_width="60dp"
+                android:layout_marginLeft="18dp"
+                android:layout_height="40dp"
+                android:text="+"
+                android:onClick="onClick"
+                android:id="@+id/b5" />
+            <TextView
+                android:layout_marginLeft="18dp"
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text=" 0"
+                android:id="@+id/t3" />
+            <Button
+                android:layout_width="60dp"
+                android:layout_marginLeft="18dp"
+                android:layout_height="40dp"
+                android:text="-"
+                android:onClick="onClick"
+                android:id="@+id/b6" />
+
+
+
+
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_marginTop="18dp"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginLeft="18dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="Rs 50"/>
+            <Button
+                android:layout_width="60dp"
+                android:layout_marginLeft="18dp"
+                android:layout_height="40dp"
+                android:text="+"
+                android:onClick="onClick"
+                android:id="@+id/b7" />
+            <TextView
+                android:layout_marginLeft="18dp"
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text=" 0"
+                android:id="@+id/t4" />
+            <Button
+                android:layout_width="60dp"
+                android:layout_marginLeft="18dp"
+                android:layout_height="40dp"
+                android:text="-"
+                android:onClick="onClick"
+                android:id="@+id/b8" />
+
+
+
+
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_marginTop="18dp"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginLeft="18dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="Rs 60"/>
+            <Button
+                android:layout_width="60dp"
+                android:layout_marginLeft="18dp"
+                android:layout_height="40dp"
+                android:text="+"
+                android:onClick="onClick"
+                android:id="@+id/b9" />
+            <TextView
+                android:layout_marginLeft="18dp"
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text=" 0"
+                android:id="@+id/t5" />
+            <Button
+                android:layout_width="60dp"
+                android:layout_marginLeft="18dp"
+                android:layout_height="40dp"
+                android:text="-"
+                android:onClick="onClick"
+                android:id="@+id/b10" />
+
+
+
+
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_marginTop="18dp"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginLeft="18dp"
+                android:layout_width="45dp"
+                android:layout_height="40dp"
+                android:text="Rs 100"/>
+            <Button
+                android:layout_width="60dp"
+                android:layout_marginLeft="14dp"
+                android:layout_height="40dp"
+                android:text="+"
+                android:onClick="onClick"
+                android:id="@+id/b11" />
+            <TextView
+                android:layout_marginLeft="18dp"
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text=" 0"
+                android:id="@+id/t6" />
+            <Button
+                android:layout_width="60dp"
+                android:layout_marginLeft="18dp"
+                android:layout_height="40dp"
+                android:text="-"
+                android:onClick="onClick"
+                android:id="@+id/b12" />
+
+
+        </LinearLayout>
+
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:layout_marginTop="18dp"
+            android:text="Juices"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_marginTop="18dp"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginLeft="18dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="Rs 10"/>
+            <Button
+                android:layout_width="60dp"
+                android:layout_marginLeft="18dp"
+                android:layout_height="40dp"
+                android:text="+"
+                android:onClick="onClick"
+                android:id="@+id/b13" />
+            <TextView
+                android:layout_marginLeft="18dp"
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text=" 0"
+                android:id="@+id/t7" />
+            <Button
+                android:layout_width="60dp"
+                android:layout_marginLeft="18dp"
+                android:layout_height="40dp"
+                android:text="-"
+                android:onClick="onClick"
+                android:id="@+id/b14" />
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_marginTop="18dp"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginLeft="18dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="Rs 15"/>
+            <Button
+                android:layout_width="60dp"
+                android:layout_marginLeft="18dp"
+                android:layout_height="40dp"
+                android:text="+"
+                android:onClick="onClick"
+                android:id="@+id/b15" />
+            <TextView
+                android:layout_marginLeft="18dp"
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text=" 0"
+                android:id="@+id/t8" />
+            <Button
+                android:layout_width="60dp"
+                android:layout_marginLeft="18dp"
+                android:layout_height="40dp"
+                android:text="-"
+                android:onClick="onClick"
+                android:id="@+id/b16" />
+
+
+
+
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_marginTop="18dp"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginLeft="18dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="Rs 20"/>
+            <Button
+                android:layout_width="60dp"
+                android:layout_marginLeft="18dp"
+                android:layout_height="40dp"
+                android:text="+"
+                android:onClick="onClick"
+                android:id="@+id/b17" />
+            <TextView
+                android:layout_marginLeft="18dp"
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text=" 0"
+                android:id="@+id/t9" />
+            <Button
+                android:layout_width="60dp"
+                android:layout_marginLeft="18dp"
+                android:layout_height="40dp"
+                android:text="-"
+                android:onClick="onClick"
+                android:id="@+id/b18" />
+
+
+
+
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_marginTop="18dp"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginLeft="18dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="Rs 25"/>
+            <Button
+                android:layout_width="60dp"
+                android:layout_marginLeft="18dp"
+                android:layout_height="40dp"
+                android:text="+"
+                android:onClick="onClick"
+                android:id="@+id/b19" />
+            <TextView
+                android:layout_marginLeft="18dp"
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text=" 0"
+                android:id="@+id/t10" />
+            <Button
+                android:layout_width="60dp"
+                android:layout_marginLeft="18dp"
+                android:layout_height="40dp"
+                android:text="-"
+                android:onClick="onClick"
+                android:id="@+id/b20" />
+
+
+
+
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_marginTop="18dp"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginLeft="18dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="Rs 30"/>
+            <Button
+                android:layout_width="60dp"
+                android:layout_marginLeft="18dp"
+                android:layout_height="40dp"
+                android:text="+"
+                android:onClick="onClick"
+                android:id="@+id/b21" />
+            <TextView
+                android:layout_marginLeft="18dp"
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text=" 0"
+                android:id="@+id/t11" />
+            <Button
+                android:layout_width="60dp"
+                android:layout_marginLeft="18dp"
+                android:layout_height="40dp"
+                android:text="-"
+                android:onClick="onClick"
+                android:id="@+id/b22" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_marginTop="35dp"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="75dp"
+                android:layout_height="40dp"
+                android:text="Reset"
+                android:onClick="onClick"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="18dp"
+                android:id="@+id/b23" />
+            <TextView
+                android:layout_marginLeft="70dp"
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:text="Total"
+                android:layout_marginBottom="20dp"
+                android:textSize="30dp"/>
+
+            <TextView
+                android:layout_marginRight="30dp"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text=" 0"
+                android:layout_marginBottom="20dp"
+                android:id="@+id/t12" />
+
+
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+</ScrollView>
