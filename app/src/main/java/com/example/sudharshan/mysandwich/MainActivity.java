@@ -32,6 +32,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     Button btn21;
     Button btn22;
     Button btn23;
+    Button btn24;
 
     TextView tx1;
     TextView tx2;
@@ -44,6 +45,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     TextView tx9;
     TextView tx10;
     TextView tx11;
+    TextView tx12;
 
     int counter = 0;
     int counter1 = 0;
@@ -56,6 +58,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     int counter8 = 0;
     int counter9 = 0;
     int counter10 = 0;
+
+    int total=0;
 
 
 
@@ -88,6 +92,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btn21 = (Button) findViewById(R.id.b21);
         btn22 = (Button) findViewById(R.id.b22);
         btn23 = (Button) findViewById(R.id.b23);
+        btn24 = (Button) findViewById(R.id.b24);
 
 
 
@@ -98,7 +103,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         tx4 = (TextView) findViewById(R.id.t4);
         tx5 = (TextView) findViewById(R.id.t5);
         tx6 = (TextView) findViewById(R.id.t6);
-        tx8 = (TextView) findViewById(R.id.t7);
+        tx7 = (TextView) findViewById(R.id.t7);
+        tx8 = (TextView) findViewById(R.id.t8);
+        tx9 = (TextView) findViewById(R.id.t9);
+        tx10 = (TextView) findViewById(R.id.t10);
+        tx11 = (TextView) findViewById(R.id.t11);
+        tx12 = (TextView) findViewById(R.id.t12);
 
 
         btn1.setOnClickListener(this);
@@ -124,6 +134,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btn21.setOnClickListener(this);
         btn22.setOnClickListener(this);
         btn23.setOnClickListener(this);
+        btn24.setOnClickListener(this);
 
         tx1.setTextSize(TypedValue.COMPLEX_UNIT_SP, 16);
         tx2.setTextSize(TypedValue.COMPLEX_UNIT_SP, 16);
@@ -136,6 +147,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         tx9.setTextSize(TypedValue.COMPLEX_UNIT_SP, 16);
         tx10.setTextSize(TypedValue.COMPLEX_UNIT_SP, 16);
         tx11.setTextSize(TypedValue.COMPLEX_UNIT_SP, 16);
+        tx12.setTextSize(TypedValue.COMPLEX_UNIT_SP, 16);
 
 
 
@@ -152,6 +164,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         if (v == btn2) {
             counter--;
+            if(counter<0) {
+                counter = 0;
+            }
             tx1.setText(Integer.toString(counter));
 
         }
@@ -164,6 +179,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
         if (v == btn4) {
             counter1--;
+            if(counter1<0) {
+                counter1 = 0;
+            }
             tx2.setText(Integer.toString(counter1));
         }
 
@@ -174,6 +192,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         if (v == btn6) {
             counter2--;
+            if(counter2<0) {
+                counter2 = 0;
+            }
             tx3.setText(Integer.toString(counter2));
         }
 
@@ -184,6 +205,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         if (v == btn8) {
             counter3--;
+            if(counter3<0) {
+                counter3 = 0;
+            }
             tx4.setText(Integer.toString(counter3));
         }
 
@@ -194,6 +218,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         if (v == btn10) {
             counter4--;
+            if(counter4<0) {
+                counter4 = 0;
+            }
             tx5.setText(Integer.toString(counter4));
         }
 
@@ -204,6 +231,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         if (v == btn12) {
             counter5--;
+            if(counter5<0) {
+                counter5 = 0;
+            }
             tx6.setText(Integer.toString(counter5));
 
         }
@@ -215,6 +245,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         if (v == btn14) {
             counter6--;
+            if(counter6<0) {
+                counter6 = 0;
+            }
             tx7.setText(Integer.toString(counter6));
 
         }
@@ -226,6 +259,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         if (v == btn16) {
             counter7--;
+            if(counter7<0) {
+                counter7 = 0;
+            }
             tx8.setText(Integer.toString(counter7));
 
         }
@@ -237,6 +273,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         if (v == btn18) {
             counter8--;
+            if(counter8<0) {
+                counter8 = 0;
+            }
             tx9.setText(Integer.toString(counter8));
 
         }
@@ -247,6 +286,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         if (v == btn20) {
             counter9--;
+            if(counter9<0) {
+                counter9 = 0;
+            }
             tx10.setText(Integer.toString(counter9));
 
         }
@@ -258,6 +300,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         if (v == btn22) {
             counter10--;
+            if(counter10<0) {
+                counter10 = 0;
+            }
             tx11.setText(Integer.toString(counter10));
 
         }
@@ -274,6 +319,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             counter8=0;
             counter9=0;
             counter10=0;
+            total=0;
 
             tx1.setText(Integer.toString(counter));
             tx2.setText(Integer.toString(counter1));
@@ -286,7 +332,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             tx9.setText(Integer.toString(counter8));
             tx10.setText(Integer.toString(counter9));
             tx11.setText(Integer.toString(counter10));
+            tx12.setText(Integer.toString(total));
 
+
+        }
+
+        if (v == btn24) {
+            total = counter*30 + counter1*40 + counter2*45 + counter3*50 + counter4*60 + counter5*100 + counter6*10 + counter7*15 + counter8*20 + counter9*25 + counter10*30;
+            tx12.setText(Integer.toString(total));
 
         }
 

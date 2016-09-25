@@ -2,13 +2,17 @@
 <ScrollView android:layout_height="wrap_content"
     android:layout_width="match_parent"
 
+
     xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <LinearLayout android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+
         android:scrollbarAlwaysDrawVerticalTrack="true"
         android:orientation="vertical"
-        xmlns:android="http://schemas.android.com/apk/res/android" >
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:background="#30a6bb">
 
         <TextView
             android:layout_width="wrap_content"
@@ -451,20 +455,32 @@
             android:layout_height="wrap_content">
 
             <Button
-                android:layout_width="75dp"
+                android:layout_width="55dp"
                 android:layout_height="40dp"
                 android:text="Reset"
+                android:textSize="10dp"
                 android:onClick="onClick"
                 android:layout_marginBottom="20dp"
                 android:layout_marginLeft="18dp"
                 android:id="@+id/b23" />
+
+            <Button
+                android:layout_width="55dp"
+                android:layout_height="40dp"
+                android:text="BILL"
+                android:textSize="10dp"
+                android:onClick="onClick"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="18dp"
+                android:id="@+id/b24" />
             <TextView
-                android:layout_marginLeft="70dp"
+                android:layout_marginLeft="50dp"
                 android:layout_width="70dp"
                 android:layout_height="40dp"
                 android:text="Total"
+
                 android:layout_marginBottom="20dp"
-                android:textSize="30dp"/>
+                android:textSize="20dp"/>
 
             <TextView
                 android:layout_marginRight="30dp"
