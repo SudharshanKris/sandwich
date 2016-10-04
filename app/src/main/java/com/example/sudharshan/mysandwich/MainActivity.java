@@ -7,44 +7,117 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
+
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
+    @BindView(R.id.b1)
     Button btn1;
+
+    @BindView(R.id.b2)
     Button btn2;
+
+    @BindView(R.id.b3)
     Button btn3;
+
+    @BindView(R.id.b4)
     Button btn4;
+
+    @BindView(R.id.b5)
     Button btn5;
+
+    @BindView(R.id.b6)
     Button btn6;
+
+    @BindView(R.id.b7)
     Button btn7;
+
+    @BindView(R.id.b8)
     Button btn8;
+
+    @BindView(R.id.b9)
     Button btn9;
+
+    @BindView(R.id.b10)
     Button btn10;
+
+    @BindView(R.id.b11)
     Button btn11;
+
+    @BindView(R.id.b12)
     Button btn12;
+
+    @BindView(R.id.b13)
     Button btn13;
+
+    @BindView(R.id.b14)
     Button btn14;
+
+    @BindView(R.id.b15)
     Button btn15;
+
+    @BindView(R.id.b16)
     Button btn16;
+
+    @BindView(R.id.b17)
     Button btn17;
+
+    @BindView(R.id.b18)
     Button btn18;
+
+    @BindView(R.id.b19)
     Button btn19;
+
+    @BindView(R.id.b20)
     Button btn20;
+
+    @BindView(R.id.b21)
     Button btn21;
+
+    @BindView(R.id.b22)
     Button btn22;
+
+    @BindView(R.id.b23)
     Button btn23;
+
+    @BindView(R.id.b24)
     Button btn24;
 
+    @BindView(R.id.t1)
     TextView tx1;
+
+    @BindView(R.id.t2)
     TextView tx2;
+
+    @BindView(R.id.t3)
     TextView tx3;
+
+    @BindView(R.id.t4)
     TextView tx4;
+
+    @BindView(R.id.t5)
     TextView tx5;
+
+    @BindView(R.id.t6)
     TextView tx6;
+
+    @BindView(R.id.t7)
     TextView tx7;
+
+    @BindView(R.id.t8)
     TextView tx8;
+
+    @BindView(R.id.t9)
     TextView tx9;
+
+    @BindView(R.id.t10)
     TextView tx10;
+
+    @BindView(R.id.t11)
     TextView tx11;
+
+    @BindView(R.id.t12)
     TextView tx12;
 
     int counter = 0;
@@ -69,88 +142,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        btn1 = (Button) findViewById(R.id.b1);
-        btn2 = (Button) findViewById(R.id.b2);
-        btn3 = (Button) findViewById(R.id.b3);
-        btn4 = (Button) findViewById(R.id.b4);
-        btn5 = (Button) findViewById(R.id.b5);
-        btn6 = (Button) findViewById(R.id.b6);
-        btn7 = (Button) findViewById(R.id.b7);
-        btn8 = (Button) findViewById(R.id.b8);
-        btn9 = (Button) findViewById(R.id.b9);
-        btn10 = (Button) findViewById(R.id.b10);
-        btn11 = (Button) findViewById(R.id.b11);
-        btn12 = (Button) findViewById(R.id.b12);
-        btn13 = (Button) findViewById(R.id.b13);
-        btn14 = (Button) findViewById(R.id.b14);
-        btn15 = (Button) findViewById(R.id.b15);
-        btn16 = (Button) findViewById(R.id.b16);
-        btn17 = (Button) findViewById(R.id.b17);
-        btn18 = (Button) findViewById(R.id.b18);
-        btn19 = (Button) findViewById(R.id.b19);
-        btn20 = (Button) findViewById(R.id.b20);
-        btn21 = (Button) findViewById(R.id.b21);
-        btn22 = (Button) findViewById(R.id.b22);
-        btn23 = (Button) findViewById(R.id.b23);
-        btn24 = (Button) findViewById(R.id.b24);
-
-
-
-
-        tx1 = (TextView) findViewById(R.id.t1);
-        tx2 = (TextView) findViewById(R.id.t2);
-        tx3 = (TextView) findViewById(R.id.t3);
-        tx4 = (TextView) findViewById(R.id.t4);
-        tx5 = (TextView) findViewById(R.id.t5);
-        tx6 = (TextView) findViewById(R.id.t6);
-        tx7 = (TextView) findViewById(R.id.t7);
-        tx8 = (TextView) findViewById(R.id.t8);
-        tx9 = (TextView) findViewById(R.id.t9);
-        tx10 = (TextView) findViewById(R.id.t10);
-        tx11 = (TextView) findViewById(R.id.t11);
-        tx12 = (TextView) findViewById(R.id.t12);
-
-
-        btn1.setOnClickListener(this);
-        btn2.setOnClickListener(this);
-        btn3.setOnClickListener(this);
-        btn4.setOnClickListener(this);
-        btn5.setOnClickListener(this);
-        btn6.setOnClickListener(this);
-        btn7.setOnClickListener(this);
-        btn8.setOnClickListener(this);
-        btn9.setOnClickListener(this);
-        btn10.setOnClickListener(this);
-        btn11.setOnClickListener(this);
-        btn12.setOnClickListener(this);
-        btn13.setOnClickListener(this);
-        btn14.setOnClickListener(this);
-        btn15.setOnClickListener(this);
-        btn16.setOnClickListener(this);
-        btn17.setOnClickListener(this);
-        btn18.setOnClickListener(this);
-        btn19.setOnClickListener(this);
-        btn20.setOnClickListener(this);
-        btn21.setOnClickListener(this);
-        btn22.setOnClickListener(this);
-        btn23.setOnClickListener(this);
-        btn24.setOnClickListener(this);
-
-        tx1.setTextSize(TypedValue.COMPLEX_UNIT_SP, 16);
-        tx2.setTextSize(TypedValue.COMPLEX_UNIT_SP, 16);
-        tx3.setTextSize(TypedValue.COMPLEX_UNIT_SP, 16);
-        tx4.setTextSize(TypedValue.COMPLEX_UNIT_SP, 16);
-        tx5.setTextSize(TypedValue.COMPLEX_UNIT_SP, 16);
-        tx6.setTextSize(TypedValue.COMPLEX_UNIT_SP, 16);
-        tx7.setTextSize(TypedValue.COMPLEX_UNIT_SP, 16);
-        tx8.setTextSize(TypedValue.COMPLEX_UNIT_SP, 16);
-        tx9.setTextSize(TypedValue.COMPLEX_UNIT_SP, 16);
-        tx10.setTextSize(TypedValue.COMPLEX_UNIT_SP, 16);
-        tx11.setTextSize(TypedValue.COMPLEX_UNIT_SP, 16);
-        tx12.setTextSize(TypedValue.COMPLEX_UNIT_SP, 16);
-
-
-
+        ButterKnife.bind(this);
     }
 
 
