@@ -258,7 +258,7 @@
             android:layout_height="wrap_content"
             android:textSize="20dp"
             android:layout_marginTop="18dp"
-            android:text="Juices"/>
+            android:text="Drinks"/>
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_marginTop="18dp"
@@ -445,6 +445,81 @@
                 android:onClick="onClick"
                 android:id="@+id/b22" />
 
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:layout_marginTop="18dp"
+            android:text="Crushers"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_marginTop="18dp"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginLeft="18dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:text="Rs 30"/>
+        <Button
+            android:layout_width="60dp"
+            android:layout_marginLeft="18dp"
+            android:layout_height="40dp"
+            android:text="+"
+            android:onClick="onClick"
+            android:id="@+id/b25" />
+        <TextView
+            android:layout_marginLeft="18dp"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text=" 0"
+            android:id="@+id/t13" />
+        <Button
+            android:layout_width="60dp"
+            android:layout_marginLeft="18dp"
+            android:layout_height="40dp"
+            android:text="-"
+            android:onClick="onClick"
+            android:id="@+id/b26" />
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_marginTop="18dp"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginLeft="18dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:text="Rs 40"/>
+        <Button
+            android:layout_width="60dp"
+            android:layout_marginLeft="18dp"
+            android:layout_height="40dp"
+            android:text="+"
+            android:onClick="onClick"
+            android:id="@+id/b27" />
+        <TextView
+            android:layout_marginLeft="18dp"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text=" 0"
+            android:id="@+id/t14" />
+        <Button
+            android:layout_width="60dp"
+            android:layout_marginLeft="18dp"
+            android:layout_height="40dp"
+            android:text="-"
+            android:onClick="onClick"
+            android:id="@+id/b28" />
 
         </LinearLayout>
 
